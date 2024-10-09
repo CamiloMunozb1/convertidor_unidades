@@ -1,8 +1,8 @@
 def operacion_centimetro(valor):
-    return valor* 10
+    return valor * 10
 
 def operacion_milimetro(valor):
-    return valor* 1000
+    return valor * 1000
 
 def operacion_pulgadas(valor):
     return valor * 25.4
@@ -19,15 +19,16 @@ def operacion_kilometros(valor):
 
 
 def milimetro():
-    print("""
-            Elige de que unidad de medida lo quieres realizar:
+    print(
+        """
+            Elige la unidad de medida para realizar la operacion:
             1. Centrimetos a Milimetros.
             2. Metros a Milimetros.
             3. Pulgadas a Milimetros.
             4. Pies a Milimetros.
             5. Yardas a Milimetros.
             6. Kilometos a Milimetros.
-            """)
+        """)
     try:
         usuario=int(input("Ingresa la unidad de medida: "))
         if usuario == 1:
@@ -49,4 +50,4 @@ def milimetro():
             valor_calculo = float(input("Ingresa el valor en Kilometros:  "))
             print(f"El valor de Kilometros en milimetros es: {operacion_milimetro(valor_calculo)}")
     except ValueError:
-        print("Error de digitacion, volver a intentar")
+        print("Error en la digitacion, volver a ingresar un valor valido")

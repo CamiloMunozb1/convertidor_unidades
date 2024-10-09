@@ -1,4 +1,5 @@
 from Unidades.milimetro import milimetro
+from Unidades.centimetro import centimetro
 
 def unidad_longitud():
     print("""
@@ -17,5 +18,9 @@ def unidad_longitud():
         usuario = int(input("Ingresa la operacion que deseas hacer: "))
         if usuario == 1:
             milimetro()
+        elif usuario == 2:
+            centimetro()
+        elif usuario == 3:
+            print("Proxima funcion")
     except ValueError:
         print("Error de digitacion, volver a intentar")
