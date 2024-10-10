@@ -1,6 +1,7 @@
 from Unidades.milimetro import milimetro
 from Unidades.centimetro import centimetro
 from Unidades.metro import metro
+from Unidades.kilometro import kilometro
 
 def unidad_longitud():
     print("""
@@ -23,5 +24,7 @@ def unidad_longitud():
             centimetro()
         elif usuario == 3:
             metro()
+        elif usuario == 4:
+            kilometro()
     except ValueError:
         print("Error de digitacion, volver a intentar")
