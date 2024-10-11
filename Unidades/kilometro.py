@@ -47,6 +47,6 @@ def kilometro():
             print(f"El valor de los pies en kilometros es: {operacion_pies(valor_calculo)}")
         elif usuario == 6:
             valor_calculo = float(input("Ingresa el valor en yardas: "))
-            print(f"El valor de las yardas en kilometros es {operacion_yardas(valor_calculo)}")
+            print(f"El valor de las yardas en kilometros es: {operacion_yardas(valor_calculo)}")
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")
