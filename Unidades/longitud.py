@@ -4,6 +4,9 @@ from Unidades.metro import metro
 from Unidades.kilometro import kilometro
 from Unidades.pulgada import pulgada
 from Unidades. pie import pies
+from Unidades.yarda import yardas
+from Unidades.milla import millas
+
 
 def unidad_longitud():
     print("""
@@ -14,8 +17,9 @@ def unidad_longitud():
             4.kilometro.
             5.pulgada.  
             6.pie.
-            7.yarda
-            8.milla
+            7.yarda.
+            8.milla.
+            9.Atras.
             """
             )
     try:
@@ -33,8 +37,8 @@ def unidad_longitud():
         elif usuario == 6:
             pies()
         elif usuario == 7:
-            print("Proxima funcion")
+            yardas()
         elif usuario == 8:
-            print("Proxima funcion")
+            millas()
     except ValueError:
         print("Error de digitacion, volver a intentar")
