@@ -1,13 +1,14 @@
 from Unidades.longitud import unidad_longitud
+from Unidad_peso.peso import unidad_peso
 
 while True:
     print(
         """
-        BIENVENDO AL CONVERTIDOR DE UNIDADES:
-        1.LONGITUD
-        2.PESO.
-        3.TEMPERATURA.
-        4.SALIR.
+            BIENVENDO AL CONVERTIDOR DE UNIDADES:
+            1.LONGITUD
+            2.PESO.
+            3.TEMPERATURA.
+            4.SALIR.
         """
         )
     try:
@@ -15,7 +16,7 @@ while True:
         if usuario == 1:
             unidad_longitud()
         elif usuario == 2:
-            print("proxima funcion")
+            unidad_peso()
         elif usuario == 3:
             print("proxima funcion")
         elif usuario == 4:
