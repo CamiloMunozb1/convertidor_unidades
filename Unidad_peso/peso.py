@@ -1,4 +1,5 @@
 from Unidad_peso.Miligramo import miligramos
+from Unidad_peso.gramo import gramo
 
 
 
@@ -19,7 +20,7 @@ def unidad_peso():
         if usuario == 1:
             miligramos()
         elif usuario == 2:
-            print("Proxima funcion")
+            gramo()
         elif usuario == 3:
             print("Proxima funcion")
         elif usuario == 4:
