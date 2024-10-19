@@ -2,6 +2,7 @@ from Unidad_peso.Miligramo import miligramos
 from Unidad_peso.gramo import gramo
 from Unidad_peso.kilogramo import kilogramo
 from Unidad_peso.onza import onza
+from Unidad_peso.libra import libras
 
 
 
@@ -28,7 +29,7 @@ def unidad_peso():
         elif usuario == 4:
             onza()
         elif usuario == 5:
-            print("Proxima funcion")
+            libras()
         elif usuario == 6:
             return
     except ValueError:
