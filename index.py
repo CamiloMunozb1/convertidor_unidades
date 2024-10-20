@@ -1,5 +1,6 @@
 from Unidades.longitud import unidad_longitud
 from Unidad_peso.peso import unidad_peso
+from temperatura.temperaturas import temperatura
 
 while True:
     print(
@@ -18,7 +19,7 @@ while True:
         elif usuario == 2:
             unidad_peso()
         elif usuario == 3:
-            print("proxima funcion")
+            temperatura()
         elif usuario == 4:
             print("Muchas gracias por visitar el convertidor.")
             break
