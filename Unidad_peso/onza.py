@@ -21,17 +21,14 @@ def onza():
         """)
     try:
         usuario = int(input("Ingresa la operacion que deseas hacer: "))
+        calculo_valor = float(input("Ingresa el valor en onzas: "))
         if usuario == 1:
-            calculo_valor = float(input("Ingresa el valor en miligramos: "))
-            print(f"El valor de Miligramos en Onzas es: {calculo_miligramo(calculo_valor)}")
+            print(f"El valor de onzas en miligramos es: {calculo_miligramo(calculo_valor)}")
         elif usuario == 2:
-            calculo_valor = float(input("Ingresa el valor en gramos: "))
-            print(f"El valor de Gramos en Onzas es: {calculo_gramo(calculo_valor)}")
+            print(f"El valor de onzas en gramos es: {calculo_gramo(calculo_valor)}")
         elif usuario == 3:
-            calculo_valor = float(input("Ingresa el valor en kilogramos: "))
-            print(f"El valor de Kilogramos en Onzas es: {calculo_kilogramo(calculo_valor)}")
+            print(f"El valor de onzas en kilogramos es: {calculo_kilogramo(calculo_valor)}")
         elif usuario == 4:
-            calculo_valor = float(input("Ingresa el valor en libras: "))
-            print(f"El valor en Libras en Onzas es: {calculo_libra(calculo_valor)}")
+            print(f"El valor de onzas en libras es: {calculo_libra(calculo_valor)}")
     except ValueError:
         print("Error de digitacion, volver a intentar.")

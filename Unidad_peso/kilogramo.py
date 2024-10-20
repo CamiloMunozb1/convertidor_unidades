@@ -21,17 +21,14 @@ def kilogramo():
         """)
     try:
         usuario = int(input("Ingresa de que medida va ser la conversion: "))
+        valor_calculo = float(input("Ingresa el valor en kilogramos: "))
         if usuario == 1:
-            valor_calculo = float(input("Ingresa el valor en miligramo: "))
-            print(f"El valor del miligramo en kilogramo es: {calculo_miligramo(calculo_miligramo)}")
+            print(f"El valor de Kilogramos en milogramos es: {calculo_miligramo(calculo_miligramo)}")
         elif usuario == 2:
-            valor_calculo = float(input("Ingresa el valor en gramos: "))
-            print(f"El valor de los gramos en kilogramos es: {calculo_gramo(valor_calculo)}")
+            print(f"El valor de kilogramos en gramos es: {calculo_gramo(valor_calculo)}")
         elif usuario == 3:
-            valor_calculo = float(input("Ingresa el valor en onzas: "))
-            print(f"El valor de las onzas en kilogramos es: {calculo_onza(valor_calculo)}")
+            print(f"El valor de kilogramos en onzas es: {calculo_onza(valor_calculo)}")
         elif usuario == 4:
-            valor_calculo = float(input("Ingresa el valor en libras: "))
-            print(f"El valor de las libras en kilogramos es: {calculo_libra(valor_calculo)}")
+            print(f"El valor de kilogramos en libras es: {calculo_libra(valor_calculo)}")
     except ValueError:
         print("Error de digitacion, volver a intentar.")

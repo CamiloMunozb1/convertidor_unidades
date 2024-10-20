@@ -21,17 +21,14 @@ def libras():
         """)
     try:
         usuario = int(input("Ingresa la operacion que deseas hacer: "))
+        calculo_valor = float(input("Ingresa el valor en libras: "))
         if usuario == 1:
-            calculo_valor = float(input("Ingresa el valor en miligramos: "))
-            print(f"El valor de miligramos en libras es: {calculo_miligramos(calculo_valor)} ")
+            print(f"El valor de libras en miligramos es: {calculo_miligramos(calculo_valor)} ")
         elif usuario == 2:
-            calculo_valor = float(input("Ingresa el valor en gramos: "))
-            print(f"El valor de gramos en libras es: {calculo_gramos(calculo_valor)}")
+            print(f"El valor de libras en gramos es: {calculo_gramos(calculo_valor)}")
         elif usuario == 3:
-            calculo_valor = float(input("Ingresa el valor en kilogramos: "))
-            print(f"El valor de los kilogramos en libras es: {calculo_kilogramos(calculo_valor)}")
+            print(f"El valor de libras en kilogramos es: {calculo_kilogramos(calculo_valor)}")
         elif usuario == 4:
-            calculo_valor = float(input("Ingresa el valor en onzas: "))
-            print(f"El valor de las onzas en libras es: {calculo_onzas(calculo_valor)}")
+            print(f"El valor de libras en onzas es: {calculo_onzas(calculo_valor)}")
     except ValueError:
         print("Error de digitacion, vuelve a intentar")

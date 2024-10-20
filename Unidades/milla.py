@@ -35,23 +35,20 @@ def millas():
     )
     try:
         usuario = int(input("Ingresa la unidad de medida: "))
+        calculo_valor = float(input("Ingresa el valor en millas: "))
         if usuario == 1:
-            calculo_valor = float(input("Ingresa el valor en milimetros: "))
-            print(f"El valor de milimetros en millas es: {calculo_milimetros(calculo_valor)}")
+            print(f"El valor de millas en milimetros es: {calculo_milimetros(calculo_valor)}")
         elif usuario == 2:
-            calculo_valor = float(input("Ingresa el valor en centimetros: "))
-            print(f"El valor de centimetros es miilas es: {calculo_centimetros(calculo_valor)}")
+            print(f"El valor de millas en centimetros es: {calculo_centimetros(calculo_valor)}")
         elif usuario == 3:
-            calculo_valor = float(input("Ingresa el valor en metros: "))
-            print(f"El valor de metros en millas es: {calculo_metros(calculo_valor)}")
+            print(f"El valor de millas en metros es: {calculo_metros(calculo_valor)}")
         elif usuario == 4:
-            calculo_valor = float(input("Ingresa el valor en pulgadas: "))
-            print(f"El valor de pulgadas en millas es: {calculo_pulgadas(calculo_pulgadas)}")
+            print(f"El valor de millas en pulgadas es: {calculo_pulgadas(calculo_pulgadas)}")
         elif usuario == 5:
-            print("Proxima funcion")
+            print(f"El valor de millas en pies es: {calculo_pies(calculo_valor)}")
         elif usuario == 6:
-            print("Proxima funcion")
+            print(f"El valor de millas en yardas es: {calculo_yardas(calculo_valor)}")
         elif usuario == 7:
-            print("Proxima funcion")
+            print(f"El valor de millas en Kilometros es: {calculo_kilometros(calculo_valor)}")
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")

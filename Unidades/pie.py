@@ -31,23 +31,18 @@ def pies():
         )
     try:
         usuario = int(input("Ingresa la unidad de medida: "))
+        valor_calculo = float(input("Ingresa el valor en pies: "))
         if usuario == 1:
-            valor_calculo = float(input("Ingresa el valor en milimetros: "))
-            print(f"El valor de  milimetros en pies es: {calculo_milimetro(valor_calculo)}")
+            print(f"El valor de pies en milimetros es: {calculo_milimetro(valor_calculo)}")
         elif usuario == 2:
-            valor_calculo = float(input("Ingresa el valor en centimetros: "))
-            print(f"El valor de centimetros en pies es: {calculo_centimetros(valor_calculo)}")
+            print(f"El valor de pies en centimetros es: {calculo_centimetros(valor_calculo)}")
         elif usuario == 3:
-            valor_calculo = float(input("Ingresa el valor en metros: "))
-            print(f"El valor de metros en pies es: {calculo_metros(valor_calculo)}")
+            print(f"El valor de pies en metros es: {calculo_metros(valor_calculo)}")
         elif usuario == 4:
-            valor_calculo = float(input("Ingresa el valor en pulgadas: "))
-            print(f"El valor de pulgadas en pies es: {calculo_pulgadas(valor_calculo)}")
+            print(f"El valor de pies en pulgadas es: {calculo_pulgadas(valor_calculo)}")
         elif usuario == 5:
-            valor_calculo = float(input("Ingresa el valor en yardas: "))
-            print(f"El valor de yardas en pies es {calculo_yardas(valor_calculo)}")
+            print(f"El valor de pies en yardas es {calculo_yardas(valor_calculo)}")
         elif usuario == 6:
-            valor_calculo = float(input("Ingresa el valor en Kilometros: "))
-            print(f"El valor de Kilometros en pies es: {calculo_kilometros(valor_calculo)}")
+            print(f"El valor de pies en kilometros es: {calculo_kilometros(valor_calculo)}")
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")

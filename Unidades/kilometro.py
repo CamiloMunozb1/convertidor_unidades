@@ -30,23 +30,18 @@ def kilometro():
         )
     try:
         usuario = int(input("Ingresa la unidad de medida: "))
+        valor_calculo = float(input("Ingresa el valor en kilometros: "))
         if usuario == 1:
-            valor_calculo = float(input("Ingresa el valor en milimetros: "))
-            print(f"El valor de milimetros en kilometros es: {operacion_milimetros(valor_calculo)}")
+            print(f"El valor de kilometros en milimetros es: {operacion_milimetros(valor_calculo)}")
         elif usuario == 2:
-            valor_calculo = float(input("Ingresa el valor en centimetros: "))
-            print(f"El valor de centimetros en Kilometros es: {operacion_centimetros(valor_calculo)}")
+            print(f"El valor de kilometros en centimetros es: {operacion_centimetros(valor_calculo)}")
         elif usuario == 3:
-            valor_calculo = float(input("Ingresa el valor en metros: "))
-            print(f"El valor de metros en kilometros es: {operacion_metros(valor_calculo)}")
+            print(f"El valor de kilometros en metros es: {operacion_metros(valor_calculo)}")
         elif usuario == 4:
-            valor_calculo = float(input("Ingresa el valor en pulgadas: "))
-            print(f"El valor de pulgadas en kilometros es: {operacion_pulgadas(valor_calculo)}")
+            print(f"El valor de kilometros en pulgadas es: {operacion_pulgadas(valor_calculo)}")
         elif usuario == 5:
-            valor_calculo = float(input("Ingresa el valor en pies: "))
-            print(f"El valor de los pies en kilometros es: {operacion_pies(valor_calculo)}")
+            print(f"El valor de kilometros en pies es: {operacion_pies(valor_calculo)}")
         elif usuario == 6:
-            valor_calculo = float(input("Ingresa el valor en yardas: "))
-            print(f"El valor de las yardas en kilometros es: {operacion_yardas(valor_calculo)}")
+            print(f"El valor de kilometros en yardas es: {operacion_yardas(valor_calculo)}")
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")
