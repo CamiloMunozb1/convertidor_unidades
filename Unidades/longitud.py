@@ -1,3 +1,6 @@
+
+# FUNCIONES DE CONVERSION QUE SE USARAN EN EL INDEX DE UNIDADES.
+
 from Unidades.milimetro import milimetro
 from Unidades.centimetro import centimetro
 from Unidades.metro import metro
@@ -8,7 +11,12 @@ from Unidades.yarda import yardas
 from Unidades.milla import millas
 
 
+# FUNCION DE IMPORTACION PARA EL INDEX ORIGINAL.
+
 def unidad_longitud():
+
+    # MENU DE USUARIOS.
+
     print(
         """
             ELIGE UNA UNIDAD DE MEDIDA:
@@ -24,7 +32,13 @@ def unidad_longitud():
         """
         )
     try:
+
+        # ENTRADA DE USAURIO PARA INGREAR LA OPERACION A REALIZAR.
+
         usuario = int(input("Ingresa la operacion que deseas hacer: "))
+
+        # OPCIONES IMPORTADAS A LAS OPERACIONES.
+
         if usuario == 1:
             milimetro()
         elif usuario == 2:
@@ -41,7 +55,13 @@ def unidad_longitud():
             yardas()
         elif usuario == 8:
             millas()
+
+        # REGRESO AL INDEX PRINCIPAL.
+
         elif usuario == 9:
             return
+    
+    # MANEJO DE ERRORES.
+    
     except ValueError:
         print("Error de digitacion, volver a intentar.")

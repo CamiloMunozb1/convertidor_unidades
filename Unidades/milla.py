@@ -1,3 +1,6 @@
+
+# OPERACIONES DE CONVERSION (MILLAS).
+
 def calculo_milimetros(valor):
     return valor / 1_609_344
 
@@ -19,8 +22,12 @@ def calculo_yardas(valor):
 def calculo_kilometros(valor):
     return valor / 1.609344
 
+# FUNCION PARA USARLA EN EL INDEX DE UNIDAD.
 
 def millas():
+
+    # MENU DE OPCIONES PARA CONVERSION.
+
     print(
         """
             Elige la unidad de medida para realizar la operacion:
@@ -34,8 +41,17 @@ def millas():
         """
     )
     try:
+
+        # OPCION PARA ELEGIR LA OPRACION A REALIZAR.
+
         usuario = int(input("Ingresa la unidad de medida: "))
+
+        # INGRESO DEL VALOR DE MEDIDA EN MILIMETROS.
+
         calculo_valor = float(input("Ingresa el valor en millas: "))
+
+        # OPCIONES DE USUARIO DONDE LA ELECCION USA LA FUNCION DE CONVERSION Y SE LE PASA EL VALOR DEL USUARIO.
+
         if usuario == 1:
             print(f"El valor de millas en milimetros es: {calculo_milimetros(calculo_valor)}")
         elif usuario == 2:
@@ -50,5 +66,8 @@ def millas():
             print(f"El valor de millas en yardas es: {calculo_yardas(calculo_valor)}")
         elif usuario == 7:
             print(f"El valor de millas en Kilometros es: {calculo_kilometros(calculo_valor)}")
+
+    # MANEJO DE ERROPRES.
+    
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")

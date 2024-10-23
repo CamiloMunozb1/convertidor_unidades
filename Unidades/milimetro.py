@@ -1,3 +1,6 @@
+
+# OPERACIONES DE CONVERSION (MILIMETRO).
+
 def operacion_centimetro(valor):
     return valor * 10
 
@@ -17,8 +20,12 @@ def operacion_kilometros(valor):
     return valor * 1_000_0000
 
 
+# FUNCION PARA USARLA EN EL INDEX DE UNIDAD.
 
 def milimetro():
+
+    # MENU DE OPCIONES PARA CONVERSION.
+
     print(
         """
             Elige la unidad de medida para realizar la operacion:
@@ -30,8 +37,17 @@ def milimetro():
             6. Kilometos a Milimetros.
         """)
     try:
+
+        # OPCION PARA ELEGIR LA OPRACION A REALIZAR.
+
         usuario=int(input("Ingresa la unidad de medida: "))
+
+        # INGRESO DEL VALOR DE MEDIDA EN MILIMETROS.
+
         valor_calculo = float(input("Ingresa el valor en milimetros: "))
+
+        # OPCIONES DE USUARIO DONDE LA ELECCION USA LA FUNCION DE CONVERSION Y SE LE PASA EL VALOR DEL USUARIO.
+
         if usuario == 1:
             print(f"El valor de milimetros a centimetros es: {operacion_centimetro(valor_calculo)}")
         elif usuario == 2:
@@ -44,5 +60,8 @@ def milimetro():
             print(f"El valor de milimetros en yardas es: {operacion_yardas(valor_calculo)}")
         elif usuario == 6:
             print(f"El valor de milimetros en kilometros es: {operacion_milimetro(valor_calculo)}")
+
+    # MANEJO DE ERRORES.
+
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")
