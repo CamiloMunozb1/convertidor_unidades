@@ -1,3 +1,6 @@
+
+# OPERACIONES DE CONVERSION (PULGADA).
+
 def calculo_milimetros(valor):
     return valor / 25.4
 
@@ -16,8 +19,12 @@ def calculo_yardas(valor):
 def calculo_kilometro(valor):
     return valor * 39_370_1
 
+# FUNCION PARA USARLA EN EL INDEX DE UNIDAD.
 
 def pulgada():
+
+    # MENU DE OPCIONES PARA CONVERSION.
+
     print(
         """
             Elige la unidad de medida para realizar la operacion:
@@ -30,8 +37,17 @@ def pulgada():
         """
     )
     try:
+
+        # OPCION PARA ELEGIR LA OPRACION A REALIZAR.
+
         usuario = int(input("Ingresa la unidad de medida: "))
+
+        # INGRESO DEL VALOR DE MEDIDA EN PULGADA.
+
         valor_calculo = float(input("Ingresa el valor en pulgadas"))
+
+        # OPCIONES DE USUARIO DONDE LA ELECCION USA LA FUNCION DE CONVERSION Y SE LE PASA EL VALOR DEL USUARIO.
+
         if usuario == 1:
             print(f"El valor de pulgadas en milimetros es: {calculo_milimetros(valor_calculo)}")
         elif usuario == 2:
@@ -44,5 +60,8 @@ def pulgada():
             print(f"El valor de pulgadas en yardas es: {calculo_yardas(valor_calculo)}")
         elif usuario == 6:
             print(f"El valor de pulgadas en kilometros es: {calculo_kilometro(valor_calculo)} ")
+
+    # MANEJO DE ERROPRES.
+    
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")

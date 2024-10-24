@@ -1,3 +1,6 @@
+
+# OPERACIONES DE CONVERSION (PIES).
+
 def calculo_milimetro(valor):
     return valor / 304.8
 
@@ -16,8 +19,12 @@ def calculo_yardas(valor):
 def calculo_kilometros(valor):
     return valor * 3280.84
 
+# FUNCION PARA USARLA EN EL INDEX DE UNIDAD.
 
 def pies():
+
+    # MENU DE OPCIONES PARA CONVERSION.
+
     print(
         """
             Elige la unidad de medida para realizar la operacion:
@@ -30,8 +37,17 @@ def pies():
         """
         )
     try:
+
+        # OPCION PARA ELEGIR LA OPRACION A REALIZAR.
+
         usuario = int(input("Ingresa la unidad de medida: "))
+
+        # INGRESO DEL VALOR DE MEDIDA EN PIES.
+
         valor_calculo = float(input("Ingresa el valor en pies: "))
+
+        # OPCIONES DE USUARIO DONDE LA ELECCION USA LA FUNCION DE CONVERSION Y SE LE PASA EL VALOR DEL USUARIO.
+
         if usuario == 1:
             print(f"El valor de pies en milimetros es: {calculo_milimetro(valor_calculo)}")
         elif usuario == 2:
@@ -44,5 +60,8 @@ def pies():
             print(f"El valor de pies en yardas es {calculo_yardas(valor_calculo)}")
         elif usuario == 6:
             print(f"El valor de pies en kilometros es: {calculo_kilometros(valor_calculo)}")
+    
+    # MANEJO DE ERROPRES.
+    
     except ValueError:
         print("Error en la digitacion, volver a ingresar un valor valido")
