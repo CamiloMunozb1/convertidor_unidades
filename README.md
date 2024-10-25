@@ -11,8 +11,11 @@ convertidor_unidades/
 
 │
 ├── index.py          # Archivo principal para las conversiones
+
 ├── Unidades/         # Carpeta que contiene archivos relacionados con las unidades
+
 │   └── ...           # Otros módulos que apoyan las conversiones
+
 └── README.md         # Documentación del proyecto
 
 ## Requisitos
