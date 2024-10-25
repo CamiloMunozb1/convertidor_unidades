@@ -8,6 +8,7 @@ El convertidor permite realizar las siguientes operaciones, repartidas entre med
 El archivo principal del proyecto es index.py, que contiene la lógica para realizar las conversiones. La estructura del proyecto es la siguiente:
 
 convertidor_unidades/
+
 │
 ├── index.py          # Archivo principal para las conversiones
 ├── Unidades/         # Carpeta que contiene archivos relacionados con las unidades
